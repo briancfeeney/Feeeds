@@ -1,0 +1,66 @@
+.feedCard {
+	border: 1px solid $gray;
+	border-radius: $radius;
+	margin: 1em 0;
+	padding: 0 1em;
+	cursor: pointer;
+	overflow: hidden;
+	max-width: 30em;
+	&:hover {
+		border-color: darken($gray, 20%);
+	}
+	.feedAvatar {
+		width: 2em;
+		height: 2em;
+		border-radius: 50%;
+		background-color: $gray;
+		float: left;
+	    margin: .5em .5em .5em 0;
+	    background-size: cover;
+	}
+	.feedName {
+		@include sansserif-B;
+		color: $darkGray;
+		font-size: 1.125em;
+		margin: .5em 0;
+		display: inline-block;
+		margin-right: 1em;
+	}
+	.feedPostingFrequency {
+		@include sansserif-L;
+		font-size: 1em;
+		color: $darkGray;
+		display: inline-block;
+	}
+	button {
+		float: right;
+	    margin-top: .85em;
+	}
+	.expansion {
+		display: block;
+		overflow: hidden;
+		margin: 0 0 .5em;
+		.tags {
+			display: inline-block;
+			font-size: .875em;
+			margin: .5em 1em 0 0;
+		}
+		button {
+			margin: 0;
+		}
+	}
+}
+
+.addNew {
+	border-style: dashed;
+	p {
+		@include sansserif-R;
+		color: $darkGray;
+		opacity: .5;
+	}
+	&:hover {
+		p {
+			opacity: 1;
+		}
+	}
+}

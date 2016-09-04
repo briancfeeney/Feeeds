@@ -1,0 +1,166 @@
+// Branding & Base Styling
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "buttons";
+@import "forms";
+
+// Layout
+@import "header";
+@import "feeeds-nav";
+
+// Reader
+@import "reader";
+@import "reader_sidebar";
+@import "articles";
+
+// Account
+@import "account";
+
+// Search
+@import "search";
+
+// Miscellaneous
+@import "feed-cards";
+@import "modals";
+
+
+// Style Guide
+
+#styleGuide {
+	display: flex;
+	max-height: 100vh;
+	overflow: hidden;
+	.styleGuideOutline {
+		height: 100vh;
+		overflow: scroll;
+		width: 12em;
+		background-color: $darkestGray;
+		padding: 0 1em;
+		color: $white;
+		> p {
+			color: $blue;
+			@include sansserif-M;
+			font-size: 1.25em;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			li {
+				@include sansserif-B;
+				font-size: 1.25em;
+			}
+			ul {
+				margin-bottom: 2em;
+				li {
+					@include sansserif-R;
+					font-size: .875em;
+					margin: .5em 0;
+				}
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.styleGuideBody {
+		@include dotbg;
+		width: 100%;
+		overflow: scroll;
+		section {
+			background-color: $white;
+			padding: 1em 0;
+			margin-bottom: 2em;
+			border-bottom: 1px solid $gray;
+			> h1 {
+				display: block;
+				border-bottom: 1px solid $gray;
+				padding: 1rem 2rem;
+				margin: 0;
+				font-size: 2em;
+			}
+			> div {
+				padding: 1em 2em;
+				border-bottom: 1px solid $gray;
+			}
+			.sg-colors {
+				.color {
+					height: 5em;
+					width: 5em;
+					display: inline-block;
+					margin: 0 1em 1em 0;
+					&:nth-child(1) {
+						background-color: $lightGray;
+					}
+					&:nth-child(2) {
+						background-color: $gray;
+					}
+					&:nth-child(3) {
+						background-color: $darkGray;
+					}
+					&:nth-child(4) {
+						background-color: $darkestGray;
+					}
+					&:nth-child(5) {
+						background-color: $blue;
+					}
+					&:nth-child(6) {
+						background-color: $blueGray;
+					}
+					&:nth-child(7) {
+						background-color: $red;
+					}
+					&:nth-child(8) {
+						background-color: $yellow;
+					}
+					&:nth-child(9) {
+						background-color: $green;
+					}
+				}
+			}
+			.sg-fonts {
+				p:nth-child(1) {
+					@include sansserif-L;
+				}
+				p:nth-child(2) {
+					@include sansserif-R;
+				}
+				p:nth-child(3) {
+					@include sansserif-M;
+				}
+				p:nth-child(4) {
+					@include sansserif-B;
+				}
+				p:nth-child(5) {
+					@include serif-R;
+				}
+				p:nth-child(6) {
+					@include serif-R-I;
+				}
+				p:nth-child(7) {
+					@include serif-B;
+				}
+				p:nth-child(8) {
+					@include serif-B-I;
+				}
+			}
+			.sg-icons {
+				svg {
+					margin: 1em 2em 1em 0;
+					width: 2em;
+					path, g {
+						fill: $black;
+					}
+				}
+			}
+		}
+	}
+	.feedCardsWrapper {
+		width: 600px;
+	}
+}
+
+
+// Helpers & Miscellaneous

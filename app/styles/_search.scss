@@ -1,0 +1,43 @@
+#search {
+	display: flex;
+}
+
+#searchFields {
+	width: 100%;
+	height: 3.5em;
+	border-bottom: 1px solid $gray;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	> div {
+		overflow: hidden;
+		flex: 8;
+		&:nth-child(1) {
+			svg {
+				width: 1.5em;
+				margin: .75em 1em;
+			}
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			border-left: 1px solid $gray;
+		}
+		&:nth-child(3) {
+			flex: 1;
+		}
+	}
+	svg {
+		float: left;
+		margin: 1em;
+	}
+	input {
+		border: none;
+		float: left;
+		margin: 0;
+		width: 85%;
+		margin-top: .3em;
+		&:focus {
+			outline: none;
+		}
+	}
+}

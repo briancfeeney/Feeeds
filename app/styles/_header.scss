@@ -1,0 +1,30 @@
+#header {
+	background-color: $darkGray;
+	color: $blue;
+	font-size: 1.625rem;
+	padding: .625rem;
+	height: 3.125rem;
+	overflow: hidden;
+	@include sansserif-L;
+	a {
+		color: $blue;
+	}
+	.currentAccount {
+		overflow: hidden;
+		float: right;
+		margin-right: 1em;
+		margin-top: -.2em;
+		cursor: pointer;
+		.profileAvatar {
+			width: 1.25rem;
+			height: 1.25rem;
+			margin: .55rem .5rem 0 0;
+		}
+		.profileName {
+			font-size: .875rem;
+			@include sansserif-R;
+			margin: 0;
+		    line-height: 3em;
+		}
+	}
+}

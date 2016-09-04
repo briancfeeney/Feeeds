@@ -1,0 +1,132 @@
+#readerArticles {
+	width: 100%;
+	overflow: scroll;
+	article {
+		@include borderBottom;
+	}
+}
+
+article {
+	box-sizing: border-box;
+	padding: 1em;
+	overflow: hidden;
+	background-color: $white;
+	h1, h2, h3, p {
+		font-family: $serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	.copy {
+		margin: 1.5em 0;
+		p {
+			line-height: 1.5em;
+		}
+	}
+}
+
+article.full {
+	background: transparent;
+	padding: 0;
+	.articleData {
+		@include borderBottom;
+	}
+	.articleContent {
+		background: $white;
+		width: 100%;
+		max-width: 56em;
+		margin: 0 auto;
+		padding: 1em 8em 3em;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+article.closed {
+	height: 3.125rem;
+	padding: 0 1em;
+	cursor: pointer;
+	.profileName {
+		width: 10em;
+	}
+	h1 {
+		font-size: 1em;
+		margin: 0;
+		display: inline-block;
+	}
+	.articlePostDate {
+		float: right;
+		font-family: $sansserif;
+		color: $darkGray;
+		@include sansserif-L;
+		margin-bottom: 0;
+	}
+}
+
+article.short {
+	@include borderBottom;
+	padding: 0 1em;
+	cursor: pointer;
+	h1 {
+		font-size: 1.125em;
+		margin: .25em 0 .5em;
+	}
+	.copy {
+		font-size: .875em;
+		margin: 0;
+		p:first-child {
+			margin: 0 0 .875em;
+		}
+		img {
+			margin-bottom: .875em;
+		}
+	}
+	.starCount {
+		float: right;
+		@include sansserif-L;
+		font-size: .875em;
+	}
+}
+
+.profileAvatar {
+	display: inline-block;
+	background-color: $gray;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	margin: .8em .8em 0 0;
+	float: left;
+}
+
+.profileName {
+	display: inline-block;
+	font-family: $sansserif;
+}
+
+.articleData {
+	font-size: .8125rem;
+	color: $darkGray;
+	.articlePostDate {
+		display: inline-block;
+		font-family: $sansserif;
+	}
+	.markUnread {
+		float: right;
+		font-family: $sansserif;
+		color: rgba($darkGray, .5);
+	}
+	.originalURL {
+		color: rgba($darkGray, .5);
+		margin-left: 2em;
+	}
+	a:hover {
+		color: $darkGray;
+	}
+}
+
+.feedName {
+	display: inline-block;
+	@include sansserif-B;
+	margin-right: 1em;
+}

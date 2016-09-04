@@ -1,0 +1,48 @@
+#feeedsNav {
+	width: 4em;
+	height: 100vh;
+	background-color: $black;
+	overflow: scroll;
+	#FeeedsF {
+		margin: 7px  0 -3px;
+		color: $blue;
+		@include sansserif_B;
+		font-size: 43px;
+		line-height: 1em;
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: $blue;
+			cursor: pointer;
+		}
+	}
+	ul {
+		padding: 1em 0;
+		margin: 0;
+		list-style-type: none;
+		li {
+			margin: 1em auto;
+			width: 2.5rem;
+			height: 2.5rem;
+			text-align: center;
+			&:first-child {
+				margin-top: 0;
+			}
+			&.active {
+				color: $lightGray;
+			}
+			&:hover {
+
+			}
+		}
+		hr {
+			border-color: $darkestGray;
+			border-top: none;
+		}
+	}
+
+	.call-to-action {
+		margin: 1em;
+		text-align:center;
+	}
+}

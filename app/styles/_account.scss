@@ -1,0 +1,116 @@
+#account {
+	display: flex;
+}
+
+#accountMain {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: scroll;
+    height: 100vh;
+	.accountWrapper {
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+		@media (max-width: 630px) {
+			flex-direction: column;
+			#accountSidebar {
+				width: 100%;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+#accountSidebar {
+	width: 17rem;
+	background-color: $darkestGray;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: scroll;
+	padding: 0 1em;
+	.profileData {
+		text-align: center;
+		margin-bottom: 3em;
+		p {
+			margin: 0;
+			color: $white;
+		}
+		.profileAvatar {
+			float: none;
+			width: 7.5em;
+			height: 7.5em;
+			margin: 2em auto .5em;
+		}
+		.profileName {
+			@include sansserif-B;
+			font-size: 1.25em;
+		}
+		.profileAccount {
+			@include sansserif-M;
+			color: $blue;
+			margin: .5em 0 1em;
+		}
+		.profileDescription {
+			@include serif-R-I;
+			font-size: .75em;
+			line-height: 1.6em;
+		}
+	}
+	.accountData {
+		text-align: center;
+		.followingData {
+		    width: 100%;
+		    max-width: 6em;
+		    margin: 2em auto;
+		    padding: 0 0 .5em;
+		    border-radius: $radius;
+		    border: 1px solid transparent;
+		    cursor: pointer;
+		    color: $white;
+		    &:hover {
+			    background-color: $black;
+			    border: 1px solid $darkGray;
+		    }
+		}
+		.count {
+			@include sansserif-L;
+			color: $blue;
+			font-size: 2.5em;
+			line-height: 1em;
+			margin: 0;
+		}
+	}
+}
+
+#accountBody {
+	width: 100%;
+	overflow: scroll;
+	@include dotbg;
+}
+
+#accountArticles {
+	width: 27rem;
+	overflow: scroll;
+    height: 100vh;
+	@include borderLeft;
+	.accountArticlesHeader {
+		height: 3.125rem;
+		padding: .75em 1em;
+		@include borderBottom;
+	}
+	@media (max-width: 920px) {
+		display: none;
+	}
+}
+
+.accountFeeds {
+	padding: 2em;
+	padding-bottom: 2em;
+	@include borderBottom;
+	background-color: $white;
+}
+
+.profileAvatar {
+	background-size: cover;
+}

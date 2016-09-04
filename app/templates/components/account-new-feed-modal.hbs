@@ -1,0 +1,35 @@
+<div id="newFeedModal" class="modal">
+	<p class="sectionHeading">New Feed</p>
+	<form>
+		<div class="label-input">
+			<label>Title</label>
+			<input type="text">
+		</div>
+		<div class="label-input">
+			<label>RSS URL</label>
+			<input type="text" placeholder="http://example.com/rss.rss">
+		</div>
+		<div class="label-input">
+			<label>Tags</label>
+			<input type="text">
+		</div>
+		<div class="label-input">
+			<label>Privacy</label>
+			<select>
+				<option>Everyone</option>
+				<option>Mutual Friends Only</option>
+				<option>Me Only</option>
+			</select>
+		</div>
+		<div class="addPhoto">
+			<label>Photo</label>
+			<button>{{svg-jar "upload"}} <span>image</span></button>
+			<p>Defaults to URL favicon.</p>
+		</div>
+	</form>
+	<div class="formButtons">
+		<button class="btn-red btn-small active">Cancel</button>
+		<button class="btn-gray btn-small active">Save</button>
+	</div>
+
+</div>

@@ -1,0 +1,77 @@
+#readerNav {
+	width: 17em;
+	background-color: $darkestGray;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: scroll;
+	.header {
+		padding: 1em;
+		border-bottom: 1px solid rgba($darkGray, .4);
+		p {
+			color: $blue;
+			margin: 0;
+			display: inline;
+			@include sansserif_B;
+			font-size: 1.25em;
+		}
+		svg {
+			float: right;
+		}
+	}
+
+	.primaryList {
+		list-style-type: none;
+		color: $white;
+		padding: 0;
+		margin: 0;
+		.postCount {
+			color: rgba($gray, .6);
+			font-size: .875em;
+			display: inline-block;
+			margin-right: .5em;
+			width: 2.1em;
+			text-align: right;
+		}
+		.groupName {
+			@include sansserif_B;
+			font-size: 1.25em;
+			display: inline-block;
+			margin: 0;
+		}
+		> li {
+			padding: .75em .5em;
+			cursor: pointer;
+			border-bottom: 1px solid rgba($darkGray, .4);
+			&.active {
+				background: rgba($lightGray, .1);
+			}
+			/*
+			&:hover {
+				background: rgba($lightGray, .05);
+			}
+			*/
+		}
+	}
+	.secondaryList {
+		list-style-type: none;
+		padding: .5em 0 1em;
+		margin: 0;
+		.profileAvatar {
+			float: none;
+			margin: 0;
+			position: relative;
+		    top: .4375em;
+		    margin-right: .25em;
+		}
+		.feedName {
+			@include sansserif_R;
+			font-size: .875em;
+			margin: .5em 0;
+		}
+	}
+
+	.organizeFeeds {
+		padding: 2em 0;
+		text-align: center;
+	}
+}

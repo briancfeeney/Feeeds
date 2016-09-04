@@ -1,0 +1,28 @@
+#reader {
+	display: flex;
+	height: 100vh;
+	#readerArticles {
+		@include dotbg;
+	}
+}
+
+.endOfFeeds {
+	min-height: 50vh;
+	text-align: center;
+	.endOfFeeedsNotice {
+		border: 1px solid $black;
+		padding: 2em 4em;
+		margin: 5em auto;
+		text-align: center;
+		background-color: $white;
+		width: 20em;
+		max-width: 80%;
+		p {
+			@include sansserif_R;
+			&:first-child {
+				font-size: 18px;
+				@include sansserif_M;
+			}
+		}
+	}
+}

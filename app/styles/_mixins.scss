@@ -1,0 +1,13 @@
+@mixin borderBottom {
+	border-bottom: 1px solid $gray;
+}
+
+@mixin borderLeft {
+	border-left: 1px solid $gray;
+}
+
+@mixin dotbg {
+	background: url('/elements/Dot-BG.svg');
+	background-repeat: repeat;
+	background-size: 7px;
+}

@@ -1,0 +1,94 @@
+input {
+	width: 100%;
+	border: 1px solid #BDBFC1;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	padding: .45em .5em;
+	box-sizing: border-box;
+	border-radius: $radius;
+	margin: .5em 0;
+	color: $darkGray;
+	@include sansserif-R;
+}
+
+select {
+	width: 100%;
+	border: 1px solid #BDBFC1;
+	font-size: 1.25em;
+	height: 3em;
+	box-sizing: border-box;
+	border-radius: $radius;
+	margin: .5em 0;
+	color: $darkGray;
+	background-color: $white;
+	@include sansserif-R;
+	option {
+		padding-left: 5em;
+	}
+}
+
+form {
+	.label-input,
+	.addPhoto {
+		position: relative;
+		label {
+			@include sansserif-B;
+			position: absolute;
+			top: 1.25em;
+			margin-left: .5em;
+			font-size: 1.25em;
+			color: $darkGray;
+		}
+		input {
+			padding-left: 5em;
+		}
+	}
+	.addPhoto {
+		margin-bottom: 2em;
+		button {
+			margin-left: 9em;
+			background-color: $white;
+			padding: 3em 4em;
+			outline: none;
+			border-radius: $radius;
+			box-shadow: none;
+			border: 1px solid #BDBFC1;
+			cursor: pointer;
+			text-align: center;
+			span {
+				display: block;
+				margin-top: .5em;
+			}
+		}
+		p {
+			display: inline-block;
+			color: rgba($darkGray, .5);
+			margin-left: 1em;
+			@include sansserif-R;
+		    position: relative;
+    		top: -1.3em;
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+   color: rgba($darkGray, .5);
+   @include sansserif-L;
+}
+
+:-moz-placeholder {
+   color: rgba($darkGray, .5);
+   @include sansserif-L;
+}
+
+:-ms-placeholder {
+   color: rgba($darkGray, .5);
+   @include sansserif-L;
+}
+
+.formButtons {
+	text-align: right;
+	button {
+		margin-left: 1em;
+	}
+}

@@ -1,0 +1,70 @@
+%button {
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-style: solid;
+	background-image: none;
+	background-color: transparent;
+	border-radius: $radius;
+	cursor: pointer;
+	@include sansserif-M;
+}
+
+.btn-small {
+	@extend %button;
+	width: 5.5rem;
+	padding: .5em 0;
+	font-size: .75rem;
+	line-height: 1.4em;
+}
+
+.btn-gray {
+	color: $darkGray;
+	border-color: $darkGray;
+	&.active {
+		color: $white;
+		background-color: $darkGray;
+	}
+	&:hover {
+		background-color: darken($darkGray, 20%);
+		color: $white;
+	}
+}
+
+.btn-red {
+	color: $red;
+	border-color: $red;
+	&.active {
+		color: $white;
+		background-color: $red;
+	}
+	&:hover {
+		background-color: darken($red, 20%);
+		color: $white;
+	}
+}
+
+.btn-blue {
+	color: $white;
+	background-color: $blue;
+	border-color: $blue;
+	width: auto;
+	padding: .5em 1em;
+	&:hover {
+		background-color: darken($blue, 20%);
+		color: $white;
+	}
+}
+
+.call-to-action {
+	text-transform: none;
+	letter-spacing: 0;
+	width: auto;
+	padding: .5em 1.5em;
+	opacity: 1;
+	&:hover {
+		background-color: transparent;
+		color: lighten($darkGray, 20%);
+		border-color: lighten($darkGray, 20%);
+	}
+}

@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('reader-folders');
+  this.route('account-home-loggedin');
+  this.route('style-guide');
+  this.route('reader-search');
 });
 
 export default Router;

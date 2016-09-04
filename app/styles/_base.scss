@@ -1,0 +1,61 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: $sansserif;
+}
+
+p {
+	@include serif-R;
+	a {
+		text-decoration: underline;
+		color: $blueGray;
+		&:hover {
+			color: darken($blueGray, 20%);
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+// Typography
+
+.label {
+	@include sansserif-B;
+	font-size: .75em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.sectionHeading {
+	@include sansserif-B;
+	font-size: 1.25em;
+	margin: 0 0 .25em;
+}
+
+.readMore {
+	text-transform: uppercase;
+	color: $gray;
+	font-size: .75rem;
+	@include sansserif-B;
+}
+
+.tags {
+	color: $darkGray;
+	@include sansserif-R;
+	span {
+		margin-right: .5em;
+		font-size: 1em;
+	}
+}

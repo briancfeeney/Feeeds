@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700|Crimson+Text:400,400i,700,700i");
+
+$serif: 'Crimson Text', serif;
+$sansserif: 'Alegreya Sans', sans-serif;
+
+@mixin serif-R {
+	font-family: $serif;
+	font-weight: 400; 
+}
+
+@mixin serif-R-I {
+	font-family: $serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin serif-B {
+	font-family: $serif;
+	font-weight: 700;
+}
+
+@mixin serif-B-I {
+	font-family: $serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+@mixin sansserif-L {
+	font-family: $sansserif;
+	font-weight: 300;
+}
+
+@mixin sansserif-R {
+	font-family: $sansserif;
+	font-weight: 400;
+}
+
+@mixin sansserif-M {
+	font-family: $sansserif;
+	font-weight: 500;
+}
+@mixin sansserif-B {
+	font-family: $sansserif;
+	font-weight: 700;
+}
