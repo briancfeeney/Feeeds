@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('account-home-loggedin');
   this.route('style-guide');
   this.route('reader-search');
+  this.route('account-settings');
+  this.route('account-notifications');
 });
 
 export default Router;

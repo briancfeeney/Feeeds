@@ -9,7 +9,9 @@
 .endOfFeeds {
 	min-height: 50vh;
 	text-align: center;
-	.endOfFeeedsNotice {
+}
+
+.messagingBox {
 		border: 1px solid $black;
 		padding: 2em 4em;
 		margin: 5em auto;
@@ -25,4 +27,3 @@
 			}
 		}
 	}
-}

@@ -14,7 +14,7 @@
 				<li><a href="">Colors</a></li>
 				<li><a href="">Fonts</a></li>
 			</ul>
-			<li><a href="">Organisms</a></li>
+			<li><a href="#organisms">Organisms</a></li>
 			<ul>
 				<li><a href="">Colors</a></li>
 				<li><a href="">Fonts</a></li>
@@ -70,6 +70,7 @@
 				{{svg-jar "carrot"}}
 				{{svg-jar "add-icon"}}
 				{{svg-jar "search-icon"}}
+				{{svg-jar "x-icon"}}
 			</div>
 
 			<div>
@@ -110,8 +111,15 @@
 				<button class="btn-gray btn-small active">Save</button>
 			</div>
 
+			<div>
+				<div class="photo-name">
+					<div class="profilePhoto" style="background-image: url(/temporaryDevAssets/profiles/profile17.jpg)"></div>
+					<p class="profileName">Blog</p>
+				</div>
+			</div>
+
 		</section>
-		<section>
+		<section class="#organisms">
 			<h1>Organisms</h1>
 
 			<div>
@@ -150,6 +158,26 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="accountNotifications">
+				<div class="notification card">
+					<div class="notificationHeader">
+						<p>New User</p>
+						{{svg-jar "x-icon"}}
+					</div>
+					<div class="notificationBody">
+						<div class="photo-name">
+							<div class="profilePhoto" style="background-image: url(/temporaryDevAssets/profiles/profile17.jpg)"></div>
+							<p class="profileName">Jack Simpson</p>
+						</div>
+						<p class="notificationDate">September 04, 2016</p>
+						<div class="notificationContent">
+							<p>The feed you follow, This Is My Blog, has been claimed by Maryellen Chambers. Follow her!</p>
+						</div>
+						<button class="btn-gray btn-small call-to-action">Follow Jack Simpson</button>
+					</div>
+				</div>
+			</div>	
 
 		</section>
 		<section>

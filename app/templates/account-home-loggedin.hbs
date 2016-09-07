@@ -3,26 +3,12 @@
 	
 	<div id="accountMain">
 		<div class="accountWrapper">
-			<div id="accountSidebar">
-				<div class="profileData">
-					<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg);"></div>
-					<p class="profileName">Brian Feeney</p>
-					<p class="profileAccount">@brian</p>
-					<p class="profileDescription">Drawing a seemingly insignificant triangle in the dirt</p>
-				</div>
-				<div class="accountData">
-					<div class="followingData">
-						<p class="label">Following</p>
-						<p class="count">304</p>
-					</div>
-					<div class="followingData">
-						<p class="label">Followers</p>
-						<p class="count">287</p>
-					</div>
-				</div>
-			</div>
+			{{account-profile-column}}
 
 			<div id="accountBody">
+
+				{{account-nav}}
+
 				<div class="accountFeeds">
 					<p class="sectionHeading">Your Feeds</p>
 					<div class="feedCard">
@@ -64,81 +50,5 @@
 		</div>
 	</div>
 
-	<div id="accountArticles">
-		<div class="accountArticlesHeader">
-			<p class="sectionHeading">Your Latest Posts</p>
-		</div>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg)"></div>
-				<p class="feedName">Blog</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">37</p>
-			</div>
-			<h1>Hello, World</h1>
-			<div class="copy">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ...</p>
-			</div>
-			<p class="readMore">See the post</p>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg)"></div>
-				<p class="feedName">Photos</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">24</p>
-			</div>
-			<div class="copy">
-				<img src="/temporaryDevAssets/dogs-photo.jpg">
-			</div>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg)"></div>
-				<p class="feedName">Blog</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">37</p>
-			</div>
-			<div class="copy">
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/logos/dribbble.png)"></div>
-				<p class="feedName">Dribbble</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">6</p>
-			</div>
-			<div class="copy">
-				<img src="/temporaryDevAssets/bkm-dribbble.png">
-			</div>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg)"></div>
-				<p class="feedName">Blog</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">37</p>
-			</div>
-			<div class="copy">
-				<p>Duis aute irure dolor in reprehenderit <a href="">in voluptate velit esse cillum</a> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			</div>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/profiles/myAvatar.jpg)"></div>
-				<p class="feedName">Blog</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">37</p>
-			</div>
-			<div class="copy">
-				<p>Excepteur sint occaecat cupidatat non proident.</p>
-			</div>
-		</article>
-		<article class="short">
-			<div class="articleData">
-				<div class="profileAvatar" style="background-image: url(/temporaryDevAssets/logos/tumblr.png)"></div>
-				<p class="feedName">Tumblr</p><p class="articlePostDate">August 25, 2016</p>
-				<p class="starCount">12</p>
-			</div>
-			<div class="copy">
-				<img src="/temporaryDevAssets/fuckthisthing.png">
-			</div>
-		</article>
-	</div>
+	{{account-articles-column}}
 </div>

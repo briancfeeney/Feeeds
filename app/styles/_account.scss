@@ -22,13 +22,23 @@
 	}
 }
 
-#accountSidebar {
-	width: 17rem;
+#accountProfileColumn {
+	width: 14rem;
 	background-color: $darkestGray;
 	height: 100vh;
 	max-height: 100vh;
 	overflow: scroll;
 	padding: 0 1em;
+	@media (max-width: 1100px) {
+		width: 12em;
+	}
+	@media (max-width: 700px) {
+		width: 9em;
+		.profileData .profileAvatar {
+			width: 4em;
+			height: 4em;
+		}
+	}
 	.profileData {
 		text-align: center;
 		margin-bottom: 3em;
@@ -41,10 +51,15 @@
 			width: 7.5em;
 			height: 7.5em;
 			margin: 2em auto .5em;
+			@media (max-width: 700px) {
+				width: 5.5em;
+				height: 5.5em;
+			}
 		}
 		.profileName {
 			@include sansserif-B;
 			font-size: 1.25em;
+			display: block;
 		}
 		.profileAccount {
 			@include sansserif-M;
@@ -90,17 +105,23 @@
 }
 
 #accountArticles {
-	width: 27rem;
+	width: 23rem;
 	overflow: scroll;
     height: 100vh;
+    @include dotbg
 	@include borderLeft;
 	.accountArticlesHeader {
 		height: 3.125rem;
 		padding: .75em 1em;
 		@include borderBottom;
+		background-color: $white;
 	}
 	@media (max-width: 920px) {
 		display: none;
+	}
+	.messagingBox {
+		padding: 1em 1em;
+	    margin: 3em auto;
 	}
 }
 
@@ -113,4 +134,69 @@
 
 .profileAvatar {
 	background-size: cover;
+}
+
+
+// Account Settings
+
+#accountSettings {
+	background-color: $white;
+	padding: 1em;
+	.addPhoto {
+		button {
+			padding: 7em 8em;
+		}
+	}
+}
+
+
+// Account Notifications
+
+#accountNotifications {
+	background-color: $white;
+	padding: 1em;
+	.notification {
+		border: 1px solid $gray;
+		border-radius: $radius;
+		.notificationHeader {
+			background-color: $gray;
+			padding: .5em 1em;
+			overflow: hidden;
+			p {
+				@include sansserif-B;
+				color: $darkGray;
+				margin: 0;
+				float: left;
+			}
+			svg {
+				float: right;
+				margin-top: .25em;
+			}
+		}
+		.notificationBody {
+			padding: 0 1em .5em;
+			overflow: hidden;
+			.photo-name {
+				float: left;
+			}
+			.notificationDate {
+				float: right;
+				@include sansserif-L;
+				color: $darkGray;
+				opacity: .5;
+			}
+			.notificationContent {
+				clear: both;
+				padding: .125em 0;
+				margin-bottom: 1em;
+				p {
+					margin: 0;
+				}
+			}
+			button {
+				float: right;
+				margin-bottom: 1em;
+			}
+		}
+	}
 }

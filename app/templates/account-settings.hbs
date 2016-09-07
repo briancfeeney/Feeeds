@@ -1,0 +1,64 @@
+<div id="account">
+{{feeeds-nav}}
+	
+	<div id="accountMain">
+		<div class="accountWrapper">
+			{{account-profile-column}}
+
+			<div id="accountBody">
+
+				{{account-nav}}
+
+
+				<div id="accountSettings">
+					<form>
+						<div class="label-input">
+							<label>Name</label>
+							<input style="text">
+						</div>
+						<div class="label-input">
+							<label>Username</label>
+							<input style="text">
+						</div>
+						<div class="label-input">
+							<label>Bio</label>
+							<textarea/>
+						</div>
+						<div class="label-input">
+							<label>Account</label>
+							<select>
+								<option>Person</option>
+								<option>Publication</option>
+								<option>Musician/Band</option>
+								<option>Product</option>
+							</select>
+						</div>
+						<div class="addPhoto">
+							<label>Photo</label>
+							<button>{{svg-jar "upload"}} <span>image</span></button>
+						</div>
+					</form>
+					<div class="formButtons">
+						<button class="btn-red btn-small active">Cancel</button>
+						<button class="btn-gray btn-small active">Save</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- To be replaced with acount-articles-column component -->
+	<div id="accountArticles">
+		<div class="accountArticlesHeader">
+			<p class="sectionHeading">Your Latest Posts</p>
+		</div>
+
+		<div class="messagingBox">
+			<div class="">
+				<p>Nothing to see here yet.</p>
+				<p><a href="">Add your feeds</a></p>
+			</div>
+		</div>
+	</div>
+</div>

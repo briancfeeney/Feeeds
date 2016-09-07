@@ -58,10 +58,10 @@
 
 .call-to-action {
 	text-transform: none;
-	letter-spacing: 0;
 	width: auto;
 	padding: .5em 1.5em;
 	opacity: 1;
+	text-transform: uppercase;
 	&:hover {
 		background-color: transparent;
 		color: lighten($darkGray, 20%);

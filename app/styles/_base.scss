@@ -7,6 +7,7 @@ body {
 
 p {
 	@include serif-R;
+	line-height: 1.5em;
 	a {
 		text-decoration: underline;
 		color: $blueGray;
@@ -59,3 +60,4 @@ img {
 		font-size: 1em;
 	}
 }
+

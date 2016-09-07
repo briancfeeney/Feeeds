@@ -1,0 +1,21 @@
+.secondaryNav {
+	padding: 1em;
+	background-color: $white;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		li {
+			float: left;
+			margin-right: 1em;
+			opacity: .5;
+			&.active {
+				opacity: 1;
+			}
+			a {
+				color: inherit;
+			}
+		}
+	}
+}

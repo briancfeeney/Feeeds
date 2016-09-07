@@ -1,0 +1,40 @@
+<div id="account">
+{{feeeds-nav}}
+	
+	<div id="accountMain">
+		<div class="accountWrapper">
+			{{account-profile-column}}
+
+			<div id="accountBody">
+
+				{{account-nav}}
+
+				<div id="accountNotifications">
+
+					<!-- Replace with dynamic component -->
+					<div class="notification card">
+						<div class="notificationHeader">
+							<p>New User</p>
+							{{svg-jar "x-icon"}}
+						</div>
+						<div class="notificationBody">
+							<div class="photo-name">
+								<div class="profilePhoto" style="background-image: url(/temporaryDevAssets/profiles/profile17.jpg)"></div>
+								<p class="profileName">Jack Simpson</p>
+							</div>
+							<p class="notificationDate">September 04, 2016</p>
+							<div class="notificationContent">
+								<p>The feed you follow, This Is My Blog, has been claimed by Maryellen Chambers. Follow her!</p>
+							</div>
+							<button class="btn-gray btn-small call-to-action">Follow Jack Simpson</button>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	{{account-articles-column}}
+</div>

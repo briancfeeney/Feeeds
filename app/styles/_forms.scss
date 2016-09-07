@@ -1,4 +1,5 @@
-input {
+input,
+textarea {
 	width: 100%;
 	border: 1px solid #BDBFC1;
 	font-size: 1.25em;
@@ -9,6 +10,11 @@ input {
 	margin: .5em 0;
 	color: $darkGray;
 	@include sansserif-R;
+	cursor: pointer;
+}
+
+textarea {
+	padding-left: 5em;
 }
 
 select {
