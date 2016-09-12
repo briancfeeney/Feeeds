@@ -12,8 +12,8 @@
 
 .btn-small {
 	@extend %button;
-	width: 5.5rem;
-	padding: .5em 0;
+	min-width: 5.5rem;
+	padding: .5em 1em .45em;
 	font-size: .75rem;
 	line-height: 1.4em;
 }
@@ -49,7 +49,6 @@
 	background-color: $blue;
 	border-color: $blue;
 	width: auto;
-	padding: .5em 1em;
 	&:hover {
 		background-color: darken($blue, 20%);
 		color: $white;
@@ -59,7 +58,7 @@
 .call-to-action {
 	text-transform: none;
 	width: auto;
-	padding: .5em 1.5em;
+	padding: .5em 1.5em .45em;
 	opacity: 1;
 	text-transform: uppercase;
 	&:hover {

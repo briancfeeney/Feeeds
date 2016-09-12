@@ -32,7 +32,9 @@
 				color: $lightGray;
 			}
 			&:hover {
-
+				svg g, svg path {
+					fill: $yellow;
+				}
 			}
 		}
 		hr {

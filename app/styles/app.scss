@@ -38,6 +38,24 @@
 }
 
 
+// Site Map
+
+#siteMap {
+	display: flex;
+	.siteLinks {
+		padding: 1em;
+		a {
+			color: $black;
+			margin-bottom: .5em;
+			display: inline-block;
+			&:hover {
+				color: $blueGray;
+			}
+		}
+	}
+}
+
+
 // Style Guide
 
 #styleGuide {
@@ -97,7 +115,7 @@
 				padding: 1em 2em;
 				border-bottom: 1px solid $gray;
 			}
-			.sg-colors {
+			#sg-colors {
 				.color {
 					height: 5em;
 					width: 5em;
@@ -132,7 +150,7 @@
 					}
 				}
 			}
-			.sg-fonts {
+			#sg-fonts {
 				p:nth-child(1) {
 					@include sansserif-L;
 				}
@@ -158,7 +176,7 @@
 					@include serif-B-I;
 				}
 			}
-			.sg-icons {
+			#sg-icons {
 				svg {
 					margin: 1em 2em 1em 0;
 					width: 2em;

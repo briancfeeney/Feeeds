@@ -9,6 +9,9 @@
 	&:hover {
 		border-color: darken($gray, 20%);
 	}
+	p {
+		margin: 0;
+	}
 	.feedAvatar {
 		width: 2em;
 		height: 2em;
@@ -22,7 +25,7 @@
 		@include sansserif-B;
 		color: $darkGray;
 		font-size: 1.125em;
-		margin: .5em 0;
+		margin: .65em 0;
 		display: inline-block;
 		margin-right: 1em;
 	}
